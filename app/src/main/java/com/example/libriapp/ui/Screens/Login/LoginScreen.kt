@@ -34,7 +34,7 @@ class LoginActivity : ComponentActivity() {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LoginScreen(navController: NavController,
-                viewModel: LoginScreenViewModel = androidx.lifecycle.viewmodel.compose.viewModel()
+                //viewModel: LoginScreenViewModel = androidx.lifecycle.viewmodel.compose.viewModel()
 ) {
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
@@ -53,8 +53,8 @@ fun LoginScreen(navController: NavController,
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            viewModel.signInWithEmailAndPassword(email, password){
-                navController.navigate(TabScreens.MainScreen.route)
+            //viewModel.signInWithEmailAndPassword(email, password){
+                //navController.navigate(TabScreens.MainScreen.route)
             }
             Text(
                 text = "Iniciar Sesión",
@@ -104,7 +104,7 @@ fun LoginScreen(navController: NavController,
             }
         }
     }
-}
+
 
 @Preview(showBackground = true)
 @Composable

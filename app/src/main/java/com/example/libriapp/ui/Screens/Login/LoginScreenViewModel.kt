@@ -11,7 +11,8 @@ import com.google.firebase.auth.auth
 import kotlinx.coroutines.launch
 
 class LoginScreenViewModel: ViewModel() {
-    private val auth: FirebaseAuth = Firebase.auth;
+    private val auth: FirebaseAuth = Firebase.auth
+    //private val auth: FirebaseAuth = Firebase.auth;
     private val _loading = MutableLiveData(false)
 
     fun signInWithEmailAndPassword(email: String, password: String, home: ()-> Unit)

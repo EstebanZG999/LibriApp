@@ -1,11 +1,12 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
 }
 
 android {
     namespace = "com.example.libriapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.libriapp"
@@ -67,7 +68,17 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:VERSION")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:VERSION")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:VERSION")
+
+
     //Navigation
     implementation ("androidx.navigation:navigation-compose:2.7.5")
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+
+    //Firebase
+    implementation(platform("com.google.firebase:firebase-bom:32.5.0"))
+    implementation(platform("com.google.firebase:firebase-auth-ktx:22.2.0"))
+    implementation(platform("com.google.firebase:firebase-firestore-ktx"))
 }
