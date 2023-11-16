@@ -31,16 +31,16 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.example.appsproyecto.R
-import com.example.appsproyecto.ui.Navigation.AppNavigation
-import com.example.appsproyecto.ui.Navigation.TabScreens
-import com.example.appsproyecto.ui.theme.AppsProyectoTheme
+import com.example.libriapp.R
+import com.example.libriapp.ui.Navigation.AppNavigation
+import com.example.libriapp.ui.Navigation.TabScreens
+import com.example.libriapp.ui.theme.LibriAppTheme
 
 class BookPageScreen : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AppsProyectoTheme {
+            LibriAppTheme {
                 AppNavigation()
             }
         }
@@ -59,7 +59,7 @@ fun bookPageScreen(){
 @Preview(showBackground = true, name = "Book Preview")
 @Composable
 fun BookPreview(){
-    AppsProyectoTheme {
+    LibriAppTheme {
         AppNavigation()
     }
 }

@@ -18,7 +18,7 @@ import com.example.libriapp.ui.Screens.Romance.romance
 
 @Composable
 fun AppNavigation(){
-    val navController = rememberNa
+    val navController = rememberNavController()
     NavHost(navController= navController, startDestination= TabScreens.LoginScreen.route){
         composable(route = TabScreens.MainScreen.route){
             principal(navController)

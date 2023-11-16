@@ -1,7 +1,5 @@
 package com.example.libriapp.ui.Screens.ProfileScreen
 
-package com.example.appsproyecto.ui.Screens.ProfileScreen
-
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -33,15 +31,15 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.example.appsproyecto.R
-import com.example.appsproyecto.ui.Navigation.AppNavigation
-import com.example.appsproyecto.ui.theme.AppsProyectoTheme
+import com.example.libriapp.R
+import com.example.libriapp.ui.Navigation.AppNavigation
+import com.example.libriapp.ui.theme.LibriAppTheme
 
 class ProfileScreen : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AppsProyectoTheme {
+            LibriAppTheme {
                 AppNavigation()
             }
         }
@@ -140,7 +138,7 @@ fun profile(navController: NavController) {
 @Composable
 @Preview(showBackground = true, name = "Principal Preview")
 fun ProfilePreview() {
-    AppsProyectoTheme {
+    LibriAppTheme {
         profile(navController = rememberNavController())
     }
 }

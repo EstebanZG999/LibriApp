@@ -23,16 +23,15 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.example.appsproyecto.R
-import com.example.appsproyecto.ui.Navigation.AppNavigation
-import com.example.appsproyecto.ui.theme.AppsProyectoTheme
+import com.example.libriapp.R
+import com.example.libriapp.ui.Navigation.AppNavigation
 import com.example.libriapp.ui.theme.LibriAppTheme
 
 class AdventureScreen : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AppsProyectoTheme {
+            LibriAppTheme {
                 AppNavigation()
             }
         }

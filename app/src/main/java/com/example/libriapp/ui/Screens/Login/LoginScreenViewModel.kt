@@ -1,6 +1,5 @@
 package com.example.libriapp.ui.Screens.Login
 
-package com.example.appsproyecto.ui.Screens.Login
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
